@@ -1,11 +1,10 @@
-
 import sys, time, serial
 import Queue, re, threading
 
 
 phone = serial.Serial(0, 460800, timeout=1)         # open first serial port
 print phone.portstr          # check which port was really used
-recipient = "9999907559"
+recipient = "xxxxxxxxxx"
 message = "Here, therde\r\n\r\nOK\r\nfake"
 send_sms_LOCK = threading.Lock()
 phone_write_LOCK = threading.Lock()
